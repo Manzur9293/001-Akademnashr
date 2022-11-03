@@ -1,0 +1,378 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline-offset: 8px;
+  outline-width: 2px;
+  outline-style: dotted;
+  outline-color: #ff7500;
+  border-radius: 5px;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  color: #000000;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  /* font-family: 'Roboto Condensed', 'Arial', sans-serif; */
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  border-top: 5px solid #ff7500;
+}
+
+.container{
+  width: 100%;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Akademnashrlogo {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ff7500;
+  transition: opacity 0.3s ease;
+}
+
+.Akademnashrlogo:hover {
+  opacity: 0.8;
+}
+
+.Akademnashrlogo:active {
+  opacity: 0.6;
+}
+
+.Akademnashrlogo span {
+  color: #252420;
+  padding-left: 12px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-list-item {
+  margin-right: 32px;
+}
+
+.header-list-item:last-child {
+  margin-right: 0;
+}
+
+.header-list-link {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.header-list-link:hover {
+  color: #ff7500;
+}
+
+.header-list-link:active {
+  opacity: 0.6;
+}
+
+.headerlink-hr {
+  border-bottom: 3px solid #ff7500;
+  padding-bottom: 4px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  background-color: #ff7500;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff750080;
+}
+
+.btn:active {
+  background-color: #ff750060;
+}
+
+.headerbtn {
+  margin-left: 32px;
+}
+
+.section-top {
+  background-color: #252420;
+}
+
+.sectiontop-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sectiontop-texts {
+  width: 387px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: #ffffff;
+}
+
+.sectiontop-hr {
+  width: 80px;
+  height: 3px;
+  background-color: #ff7500;
+  border: none;
+  margin-bottom: 40px;
+}
+
+.sectiontop-heading {
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+
+.sectiontop-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 32px;
+}
+
+.sectiontop-img {
+  border-radius: 8px;
+  box-shadow: 24px 24px 0 rgba(255, 177, 0, 0.6);
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.sectionmiddle-box {
+  margin-top: 210px;
+  margin-bottom: 330px;
+}
+
+.hrmiddle-small {
+  margin-bottom: 24px;
+}
+
+.sectionmiddle-box-heading {
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 86.5px;
+  letter-spacing: 0.5px;
+  margin-bottom: 72px;
+}
+
+.sectionmiddle-blog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionmiddle-blog-inner {
+  width: 320px;
+}
+
+.sectionmiddle-icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 177, 0, 0.2);
+  border-radius: 50%;
+  margin-bottom: 32px;
+}
+
+.sectionmiddle-icon svg {
+  display: block;
+}
+
+.sectionmiddle-blog-inner-heading {
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.sectionmiddle-blog-inner-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.sectionbottom-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252420;
+  border-radius: 12px;
+  color: #ffffff;
+  padding: 66px 64px 62px;
+  margin-bottom: 162px;
+  position: relative;
+}
+
+.sectionbottom-texts {
+  width: 440px;
+}
+
+.sectionbottom-heading {
+  font-family: 'Roboto Condensed', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+
+.sectionbottom-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.sectionbottom-texttwo {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+
+.sectionbottom-texttwo span {
+  font-weight: 700;
+  color: #ff7500;
+}
+
+.sectionbottom-img {
+  border-radius: 12px;
+  position: absolute;
+  bottom: 62px;
+  right: 64px;
+}
+
+.footer-box {
+  background-color: #f8f8f8;
+  color: #252420;
+}
+
+.footerbox-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerlogo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footerbox-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerbox-icon {
+  display: block;
+  color: #252420;
+  margin-right: 16px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.footerbox-icon:last-child {
+  margin-right: 0;
+}
+
+.footerbox-icon:hover {
+  color: #ff7500;
+}
+
+.footerbox-icon:active {
+  opacity: 0.6;
+}
+
+.footerbox-icon svg {
+  display: block;
+}
+
+.footer-hr {
+  margin-bottom: 64px;
+}
+
+.footerbox-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 56px;
+}
+
+.footerbox-bottom-list {
+  width: 224px;
+}
+
+.footerbox-bottom-item {
+  margin-bottom: 16px;
+}
+
+.footerbox-bottom-item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-link {
+  color: #252420;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff7500;
+}
+
+.footer-link:active {
+  opacity: 0.6;
+}
